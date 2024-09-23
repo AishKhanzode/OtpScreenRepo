@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@drawable/dialog_background">
+
+    <!-- Internet Icon -->
+    <ImageView
+
+        android:layout_width="67dp"
+        android:layout_height="54dp"
+        android:src="@drawable/ic_no_internet" />
+
+    <!-- No Internet Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="No Internet"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Message -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please check your internet connection and then enjoy this app."
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <!-- OK Button -->
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="75dp"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="OK" />
+</LinearLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+
+    <!-- OTP Title -->
+
+    <ImageView
+        android:id="@+id/imgOtpIllustration"
+        android:layout_width="271dp"
+        android:layout_height="276dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Phone Illustration"
+        android:src="@drawable/pic2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgOtpIllustration"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="OTP"
+        android:textColor="#FF5E5E"
+        android:textSize="29sp" />
+
+    <!-- OTP Instructions -->
+    <TextView
+        android:id="@+id/tvOtpInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A 6 digit code has been sent to 9028848725 "
+        android:textSize="14sp"
+        android:textColor="#8A8A8A"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <!-- OTP Input -->
+
+
+    <!-- Resend and Verify Button -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/etOtp1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_otp_input"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etOtp2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_otp_input"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/etOtp3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_otp_input"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/etOtp4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_otp_input"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/etOtp5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_otp_input"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/etOtp6"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_otp_input"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn’t receive the code?"
+            android:textSize="12sp"
+            android:textColor="#8A8A8A"/>
+
+        <TextView
+            android:id="@+id/tvResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" RESEND"
+            android:textSize="12sp"
+            android:textColor="#FF5E5E"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Verify Button -->
+    <Button
+        android:id="@+id/btnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:backgroundTint="#FF5E5E"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/circular_gradient_progress"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+</LinearLayout>
+

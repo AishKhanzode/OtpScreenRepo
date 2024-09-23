@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+
+
+    <ImageView
+        android:layout_width="227dp"
+        android:layout_height="204dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:contentDescription="Welcome Illustration"
+        android:src="@drawable/otppic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="WELCOME"
+        android:textColor="#FF5E5E"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter number to continue"
+        android:textSize="14sp"
+        android:textColor="#8A8A8A"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Phone Number Input -->
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_edit_text"/>
+
+    <!-- Instructions -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A 6 digit OTP will be sent via SMS to verify your phone number."
+        android:textSize="12sp"
+        android:textColor="#8A8A8A"
+        android:layout_marginTop="8dp"
+        android:gravity="center"/>
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:backgroundTint="#FF5E5E"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:layout_marginTop="20dp"
+        android:indeterminateDrawable="@drawable/circular_gradient_progress"
+        />
+
+
+
+</LinearLayout>
